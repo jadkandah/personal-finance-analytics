@@ -132,7 +132,7 @@ from src.finance_pipeline import run
 
 results = run("data/raw/my_data.csv")
 
-📈 Model Evaluation
+##📈 Model Evaluation
 
 Models are evaluated using:
 
@@ -148,7 +148,7 @@ Time-based backtesting
 
 Only lag-based features are used to avoid future data leakage.
 
-▶️ How to Run
+##▶️ How to Run
 
 1️⃣ Install Dependencies
 pip install -r requirements.txt
@@ -161,7 +161,7 @@ data/raw/
 Open:
 notebooks/04_RunMe.ipynb
 
-📤 Output
+##📤 Output
 
 The system produces:
 
@@ -187,7 +187,7 @@ results["next_month_forecast"]
 results["spending_habits"]
 results["models"]
 
-🔒 Data Privacy
+##🔒 Data Privacy
 
 All personal data remains local
 
@@ -211,11 +211,11 @@ Personalized alerts
 
 Mobile dashboard
 
-📄 License
+##📄 License
 
 This project is for academic and personal learning purposes only.
 
-👤 Author
+##👤 Author
 
 Jad Kandah
 GitHub: https://github.com/jadkandah
