@@ -22,17 +22,17 @@ The system is designed around a single-call pipeline that ingests raw financial 
 ## 🧩 System Architecture
 
 Raw CSV Data
-↓
+        ↓
 Automatic Cleaning & Validation
-↓
+        ↓
 Feature Engineering (Lag-Based)
-↓
+        ↓
 Spending Analysis
-↓
+        ↓
 Model Selection & Training
-↓
+        ↓
 Next-Month Forecasting
-↓
+        ↓
 Risk Assessment & Visualization
 
 
@@ -42,25 +42,23 @@ The system operates through a unified and modular pipeline interface.
 
 ## 📁 Project Structure
 
+```text
 personal-finance-analytics/
 ├── data/
-│ ├── raw/
-│ └── sample/
-│
+│   ├── raw/                 # Private data (ignored)
+│   └── sample/              # Public example data
 ├── notebooks/
-│ ├── 01_data_exploration.ipynb
-│ ├── 02_eda.ipynb
-│ ├── 03_modeling.ipynb
-│ └── 04_RunMe.ipynb
-│
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_eda.ipynb
+│   ├── 03_modeling.ipynb
+│   └── 04_RunMe.ipynb
 ├── src/
-│ └── finance_pipeline.py
-│
+│   └── finance_pipeline.py
 ├── reports/
-│ └── screenshots/
-│
+│   └── screenshots/
 ├── requirements.txt
 └── README.md
+```
 
 
 ---
@@ -125,91 +123,69 @@ All private financial data is excluded from this repository.
 
 ### One-Call Interface
 
-Users only need:
+- Users only need:
 
-python
-from src.finance_pipeline import run
-
-results = run("data/raw/my_data.csv")
+  - python
+    - from src.finance_pipeline import run
+    - results = run("data/raw/my_data.csv")
 
 ##📈 Model Evaluation
 
-Models are evaluated using:
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score
-
-Visual inspection
-
-Time-based backtesting
-
-Only lag-based features are used to avoid future data leakage.
+- Models are evaluated using:
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- R² Score
+- Visual inspection
+- Time-based backtesting
+- Only lag-based features are used to avoid future data leakage.
 
 ## ▶️ How to Run
 
 ### 1️⃣ Install Dependencies
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 ### 2️⃣ Place Your Data
-Put your CSV file in:
-data/raw/
+- Put your CSV file in:
+  - data/raw/
 
 ### 3️⃣ Run the Pipeline
-Open:
-notebooks/04_RunMe.ipynb
+- Open:
+  - notebooks/04_RunMe.ipynb
 
 ## 📤 Output
 
-The system produces:
+### The system produces:
 
-Console Report
+- Console Report
+- Next-month predicted spending
+- Expense ratio
+- Risk level
+- Plots
+- Historical spending + forecast
+- Expense ratio trend
+- Structured Output
 
-Next-month predicted spending
+### Returned as a Python dictionary:
 
-Expense ratio
-
-Risk level
-
-Plots
-
-Historical spending + forecast
-
-Expense ratio trend
-
-Structured Output
-
-Returned as a Python dictionary:
-
-results["next_month_forecast"]
-results["spending_habits"]
-results["models"]
+- results["next_month_forecast"]
+- results["spending_habits"]
+- results["models"]
 
 ## 🔒 Data Privacy
 
-All personal data remains local
+- All personal data remains local
+- Raw data is ignored by Git
+- No cloud upload or external APIs
+- Fully offline operation
 
-Raw data is ignored by Git
+## 🔮 Future Improvements
 
-No cloud upload or external APIs
-
-Fully offline operation
-
-🔮 Future Improvements
-
-Multi-step forecasting
-
-Deep learning models (LSTM, Transformer)
-
-Web interface
-
-Automated budget recommendations
-
-Personalized alerts
-
-Mobile dashboard
+- Multi-step forecasting
+- Deep learning models (LSTM, Transformer)
+- Web interface
+- Automated budget recommendations
+- Personalized alerts
+- Mobile dashboard
 
 ## 📄 License
 
