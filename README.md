@@ -148,20 +148,20 @@ Time-based backtesting
 
 Only lag-based features are used to avoid future data leakage.
 
-##▶️ How to Run
+## ▶️ How to Run
 
-1️⃣ Install Dependencies
+### 1️⃣ Install Dependencies
 pip install -r requirements.txt
 
-2️⃣ Place Your Data
+### 2️⃣ Place Your Data
 Put your CSV file in:
 data/raw/
 
-3️⃣ Run the Pipeline
+### 3️⃣ Run the Pipeline
 Open:
 notebooks/04_RunMe.ipynb
 
-##📤 Output
+## 📤 Output
 
 The system produces:
 
@@ -187,7 +187,7 @@ results["next_month_forecast"]
 results["spending_habits"]
 results["models"]
 
-##🔒 Data Privacy
+## 🔒 Data Privacy
 
 All personal data remains local
 
@@ -211,13 +211,12 @@ Personalized alerts
 
 Mobile dashboard
 
-##📄 License
+## 📄 License
 
 This project is for academic and personal learning purposes only.
 
-##👤 Author
+## 👤 Author
 
-Jad Kandah
+### Jad Kandah
 GitHub: https://github.com/jadkandah
-
 LinkedIn: https://www.linkedin.com/in/jad-kandah-992294132
