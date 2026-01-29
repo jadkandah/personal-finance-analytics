@@ -20,21 +20,23 @@ The system is designed around a single-call pipeline that ingests raw financial 
 ---
 
 ## 🧩 System Architecture
+```
 
-Raw CSV Data
-        ↓
+        Raw CSV Data
+             ↓
 Automatic Cleaning & Validation
-        ↓
+             ↓
 Feature Engineering (Lag-Based)
-        ↓
-Spending Analysis
-        ↓
-Model Selection & Training
-        ↓
-Next-Month Forecasting
-        ↓
+             ↓
+     Spending Analysis
+             ↓
+  Model Selection & Training
+             ↓
+    Next-Month Forecasting
+             ↓
 Risk Assessment & Visualization
 
+```
 
 The system operates through a unified and modular pipeline interface.
 
@@ -129,7 +131,7 @@ All private financial data is excluded from this repository.
     - from src.finance_pipeline import run
     - results = run("data/raw/my_data.csv")
 
-##📈 Model Evaluation
+## 📈 Model Evaluation
 
 - Models are evaluated using:
 - Mean Absolute Error (MAE)
@@ -194,5 +196,5 @@ This project is for academic and personal learning purposes only.
 ## 👤 Author
 
 ### Jad Kandah
-GitHub: https://github.com/jadkandah
-LinkedIn: https://www.linkedin.com/in/jad-kandah-992294132
+- GitHub: https://github.com/jadkandah
+- LinkedIn: https://www.linkedin.com/in/jad-kandah-992294132
