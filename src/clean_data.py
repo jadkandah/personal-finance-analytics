@@ -3,6 +3,9 @@ from pathlib import Path
 
 import pandas as pd
 
+# for testing change the raw_path to a sample file so 
+# RAW_PATH = Path("data/sample/expenses_raw_sample.csv")
+
 RAW_PATH = Path("data/raw/expenses_raw.csv")
 CLEAN_PATH = Path("data/processed/expenses_clean.csv")
 
