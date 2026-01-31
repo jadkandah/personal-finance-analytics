@@ -196,5 +196,4 @@ This project is for academic and personal learning purposes only.
 ## 👤 Author
 
 ### Jad Kandah
-- GitHub: https://github.com/jadkandah
 - LinkedIn: https://www.linkedin.com/in/jad-kandah-992294132
